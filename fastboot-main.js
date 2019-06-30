@@ -1,6 +1,6 @@
 const FastBootAppServer = require('fastboot-app-server');
 const admin = require('firebase-admin');
-var serviceAccount = require("../mobile-services-9f146-firebase-adminsdk-2n1f2-ee385fc648.json");
+var serviceAccount = require("./mobile-services-9f146-firebase-adminsdk-2n1f2-ee385fc648.json");
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "https://mobile-services-9f146.firebaseio.com"
