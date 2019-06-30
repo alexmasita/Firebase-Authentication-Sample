@@ -25,7 +25,7 @@ module.exports = function (environment) {
       apiKey: 'AIzaSyCmQe4bsIXeQR8sppQF83MFLyc48lM0-8U',
       authDomain: 'mobile-services-9f146.firebaseapp.com',
       databaseURL: 'https://mobile-services-9f146.firebaseio.com',
-      projectId: 'GOOGLE_CLOUD_PROJECT',
+      projectId: 'mobile-services-9f146',
       storageBucket: 'gs://mobile-services-9f146.appspot.com',
       messagingSenderId: '741165857222'
     },
