@@ -1,0 +1,75 @@
+{{!-- Cabber Form --}}
+<div layout="row" layout-wrap=""
+  class="layout-wrap ng-scope layout-row layout-padding layout-padding-lg">
+  <div class="flex-100">
+
+    <form>
+
+      <md-input-container class="md-block md-input-has-value md-input-gray">
+        {{input
+        class="ng-pristine ng-valid md-input md-no-radius md-has-border-bottom ng-not-empty ng-touched"
+       aria-invalid="false" type="text"
+        placeholder="Enter Email" value=email autocomplete="username"}}
+      </md-input-container>
+      <md-input-container class="md-block md-input-has-value md-input-gray">
+        {{input
+        class="ng-pristine ng-valid md-input md-no-radius ng-not-empty ng-touched"
+         aria-invalid="false" type="password"
+        placeholder="Enter Password" value=password autocomplete="current-password"}}
+      </md-input-container>
+      <div class="layout-row layout-align-center-center" layout="row"
+        layout-align="center center">
+        <button {{action "login"}}
+          class="md-primary md-raised md-button md-button-green md-no-radius md-ink-ripple md-top-margin flex-100"
+          type="button">
+          <span class="ng-scope">Login</span>
+          <div class="md-ripple-container"></div>
+        </button>
+      </div>
+      <div layout="row" layout-wrap=""
+        class="layout-wrap ng-scope layout-row layout-links">
+        <div class="flex-50">
+          New user?
+          <a href="#0" class="green-link">Sign up</a>
+        </div>
+        <div class="flex-50 flex-textright">
+          Forgot
+          <a href="#0" class="green-link">Password?</a>
+        </div>
+      </div>
+      <div layout="row" layout-wrap="" class="layout-wrap ng-scope layout-row">
+        <div class="flex-100">
+          <div class="login-options">
+            <span>Or continue with</span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="layout-sm-column layout-align-center-stretch layout-row layout-login-links"
+        layout="row" layout-sm="column" layout-align="center">
+        <button
+          class="md-raised md-primary md-button md-ink-ripple flex-50 md-no-radius"
+          type="button">
+          <span class="ng-scope">Facebook</span>
+          <div class="md-ripple-container"></div>
+        </button>
+        <button class="md-raised md-button md-ink-ripple flex-50 md-no-radius"
+          type="button">
+          <span class="ng-scope">Google</span>
+          <div class="md-ripple-container"></div>
+        </button>
+      </div>
+    </form>
+
+  </div>
+</div>
+{{#if errorMessage}}
+  <div class="alert alert-danger">
+    <p>
+      <strong>Login failed:</strong> <code>{{errorMessage}}</code>
+    </p>
+    <p>
+      Documentation of the error codes can be found in here.
+    </p>
+  </div>
+{{/if}}

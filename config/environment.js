@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'ember310',
     environment,
@@ -20,6 +20,17 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    firebase: {
+      apiKey: 'AIzaSyCmQe4bsIXeQR8sppQF83MFLyc48lM0-8U',
+      authDomain: 'mobile-services-9f146.firebaseapp.com',
+      databaseURL: 'https://mobile-services-9f146.firebaseio.com',
+      projectId: 'GOOGLE_CLOUD_PROJECT',
+      storageBucket: 'gs://mobile-services-9f146.appspot.com',
+      messagingSenderId: '741165857222'
+    },
+    fastboot: {
+      hostWhitelist: [/^localhost:\d+$/, 'localhost', 'fonts.gstatic.com', 'mpesa-on-zuru.firebaseio.com', 'mpesa-on-zuru.firebaseapp.com', 'fonts.googleapis.com']
     }
   };
 

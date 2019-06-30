@@ -1,0 +1,2025 @@
+@import 'ember-paper';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+
+.overlay.layout-column {
+  z-index: 99999;
+}
+
+.layout-location-item.mt51 {
+  margin-top: 51px;
+}
+
+.ember-google-map {
+  height: 100%;
+}
+
+.g-map-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.ember-google-map {
+  width: 100%;
+  height: 100%;
+}
+
+.gm-style-iw {
+  width: 200px;
+}
+
+.gm-style-iw+div {
+  display: none;
+}
+
+.gm-style-iw>div {
+  max-width: 100% !important;
+  max-height: none !important;
+  overflow: hidden !important;
+}
+
+.location-title {
+  padding-right: 25px;
+  margin: 0;
+  font-size: 12px;
+  position: relative;
+}
+
+.location-title .material-icons {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-size: 18px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.centerDivMarker {
+  position: absolute;
+  margin-top: -100px;
+  top: 50%;
+  left: 50%;
+  white-space: nowrap;
+  z-index: 2;
+  background: #54b61e;
+  -webkit-border-radius: 32px;
+  border-radius: 32px;
+  display: inline-block;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-family: Arial;
+  font-size: 16px;
+  padding: 8px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
+.centerDivMarker:before {
+  position: absolute;
+  left: 50%;
+  bottom: -14px;
+  border-top: 15px solid #54b61e;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  content: "";
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.centerDivMarker:after {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 2px;
+  height: 40px;
+  background: #54b61e;
+  content: "";
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.timer {
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  font-size: 12px;
+  line-height: 12px;
+  margin-right: 10px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  position: relative;
+}
+
+.timer .timer-spacer {
+  display: block;
+  padding-top: 5px;
+}
+
+.timer .timer-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 5px;
+  background: #ffffff;
+  border: 3px solid #54b61e;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.centerDivMarker .material-icons {
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  font-size: 18px;
+  line-height: 34px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+
+.centerDivLine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  margin-left: 1px;
+  margin-top: -44px;
+  width: 3px;
+  height: 44px;
+  background-color: #7892c2;
+  cursor: pointer;
+}
+
+/* Cabber Normal CSS */
+
+button,
+select,
+html,
+textarea,
+input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.md-top-margin {
+  margin: 20px 0 0 !important;
+}
+
+.md-button {
+  font-weight: 600;
+  min-height: 50px;
+  line-height: 50px;
+}
+
+.md-button .md-small-text {
+  font-weight: 300;
+  text-transform: none;
+}
+
+.md-button.md-fab.md-mini {
+  min-height: 40px;
+}
+
+.md-button-radius {
+  -webkit-border-radius: 5px !important;
+  -ms-border-radius: 5px !important;
+  border-radius: 5px !important;
+}
+
+.md-no-radius {
+  -webkit-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+.md-no-margin {
+  margin: 0 !important;
+}
+
+.green-link {
+  color: #54b61e;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.green-link.small {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.flex-textright {
+  text-align: right;
+}
+
+.flex-textcenter {
+  text-align: center;
+}
+
+.layout-align-center-center {
+  text-align: center;
+}
+
+.md-button.md-default-theme.md-raised,
+.md-button.md-raised {
+  background-color: #ffffff;
+}
+
+.md-button.md-default-theme.md-primary.md-raised,
+.md-button.md-default-theme.md-primary.md-fab,
+.md-button.md-primary.md-raised,
+.md-button.md-primary.md-fab {
+  background-color: #2553b4;
+}
+
+.material-icons {
+  vertical-align: middle;
+}
+
+.md-inline-text {
+  display: block;
+  overflow: hidden;
+  padding-right: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Cabber Top Bar CSS */
+
+md-toolbar.md-default-theme:not(.md-menu-toolbar).md-accent,
+md-toolbar:not(.md-menu-toolbar).md-accent {
+  background-color: #54b61e;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+md-toolbar.md-transparent-toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  color: #000000;
+  z-index: 1;
+}
+
+md-toolbar md-switch,
+md-toolbar md-switch:last-of-type {
+  margin: auto;
+}
+
+md-toolbar md-switch.ng-empty>.md-label:first-child {
+  color: #ffffff;
+}
+
+md-toolbar md-switch.ng-not-empty>.md-label:last-child {
+  color: #ffffff;
+}
+
+.md-toolbar-tools h1,
+.md-toolbar-tools h2,
+.md-toolbar-tools h3 {
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* Cabber Menu CSS */
+
+.flex-author-info {
+  width: 100%;
+}
+
+md-sidenav .flex-sidebar-buttons {
+  padding: 10px;
+}
+
+md-sidenav .flex-sidebar-buttons .md-default-theme.md-button {
+  min-width: 100%;
+  margin: 0 0 10px;
+  min-height: 45px;
+  line-height: 45px;
+  border: 1px solid #ececec;
+}
+
+md-sidenav .flex-sidebar-buttons .md-default-theme.md-button:last-child {
+  margin-bottom: 0;
+  background: #54b61e;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+md-list-item._md-button-wrap>div.md-button:first-child {
+  font-weight: 500;
+}
+
+md-list-item._md-button-wrap>div.md-button .material-icons {
+  color: #54b61e;
+  margin-right: 0px;
+}
+
+/* Cabber Logo CSS */
+
+.layout-app-logo,
+.layout-app-logo.layout-padding-lg>* {
+  padding-bottom: 0;
+}
+
+.ng-app-logo {
+  width: 106px;
+}
+
+/* Cabber Form CSS */
+
+.md-input-gray {
+  padding: 0;
+  margin: 0;
+}
+
+.md-input-gray .md-input {
+  height: 50px;
+  padding: 10px 20px;
+  border: none;
+  background: #f5f4f4;
+  color: #626262;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+}
+
+.md-radius-top {
+  -webkit-border-radius: 5px 5px 0 0 !important;
+  -ms-border-radius: 5px 5px 0 0 !important;
+  border-radius: 5px 5px 0 0 !important;
+}
+
+.md-radius-bottom {
+  -webkit-border-radius: 0 0 5px 5px !important;
+  -ms-border-radius: 0 0 5px 5px !important;
+  border-radius: 0 0 5px 5px !important;
+}
+
+.md-has-border-bottom {
+  border-bottom: 1px solid #c7c7c7 !important;
+}
+
+.md-has-border-right {
+  border-right: 1px solid #c7c7c7 !important;
+}
+
+.md-button-green {
+  background-color: #54b61e !important;
+  -webkit-box-shadow: 0 5px 5px rgba(84, 182, 30, 0.4) !important;
+  -ms-box-shadow: 0 5px 5px rgba(84, 182, 30, 0.4) !important;
+  box-shadow: 0 5px 5px rgba(84, 182, 30, 0.4) !important;
+}
+
+.md-button.md-default-theme.md-primary.md-raised,
+.md-button.md-default-theme.md-primary.md-fab,
+.md-button.md-primary.md-raised,
+.md-button.md-primary.md-fab {
+  color: #ffffff;
+}
+
+.layout-links {
+  padding: 30px 0;
+  font-size: 14px;
+
+  .flex-100 {
+    text-align: center;
+  }
+}
+
+.login-options {
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+
+.login-options:after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #c7c7c7;
+  content: "";
+  z-index: 0;
+}
+
+.login-options span {
+  display: inline-block;
+  padding: 0 20px;
+  background: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.layout-login-links .md-button {
+  font-weight: 400;
+}
+
+md-progress-linear.md-default-theme .md-bar,
+md-progress-linear .md-bar {
+  background: #54b61e;
+}
+
+/* Cabber Client Category Pages CSS */
+
+/* Cabber Book Ride Info Screen CSS */
+
+.layout-fit-screen {
+  position: relative;
+}
+
+.layout-fit-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.layout-fit-screen,
+.layout-fit-screen .layout-column {
+  height: 100%;
+}
+
+.md-gray-map,
+.ember-google-map [aria-hidden="true"] img {
+  filter: gray;
+  /* IE */
+  -webkit-filter: grayscale(1);
+  /* Old WebKit */
+  -webkit-filter: grayscale(100%);
+  /* New WebKit */
+  filter: url(resources.svg#desaturate);
+  /* older Firefox */
+  filter: grayscale(100%);
+  /* Current draft standard */
+}
+
+md-card {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+}
+
+md-card+md-card {
+  margin-top: 0;
+}
+
+md-card md-card-title {
+  padding: 15px;
+}
+
+md-card md-card-title .green-link {
+  font-weight: normal;
+}
+
+md-card>img,
+md-card>md-card-header img,
+md-card md-card-title-media img {
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+
+md-card md-card-header md-card-avatar+md-card-header-text {
+  padding-left: 15px;
+}
+
+md-card md-card-header md-card-avatar+md-card-header-text a {
+  color: #484848;
+}
+
+md-card.md-default-theme md-card-header md-card-header-text .md-subhead,
+md-card md-card-header md-card-header-text .md-subhead {
+  color: #312f2f;
+}
+
+.md-headline,
+.md-subhead,
+.md-title {
+  display: block;
+}
+
+.md-ratings {
+  color: #54b61e;
+}
+
+.md-ratings .material-icons {
+  font-size: inherit;
+}
+
+.layout-driver-info .md-subhead {
+  color: #8e8e8e;
+  font-size: 14px;
+}
+
+.layout-driver-info .md-title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.md-button-noshadow {
+  -webkit-box-shadow: none !important;
+  -ms-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.md-trip-location {
+  padding: 0 0 10px 25px;
+  position: relative;
+}
+
+.md-trip-location:last-child {
+  padding-bottom: 20px;
+}
+
+.md-trip-location:last-child:before {
+  background: #ffca28;
+}
+
+.md-trip-location:last-child:after {
+  display: none;
+}
+
+.md-trip-location:before {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: #54b61e;
+  -webkit-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  content: "";
+  z-index: 1;
+}
+
+.md-trip-location:after {
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  width: 1px;
+  height: 100%;
+  background: #000000;
+  content: "";
+  z-index: 0;
+}
+
+.md-trip-location .md-title {
+  font-weight: normal;
+  color: #393939;
+  font-size: 15px;
+}
+
+.layout-text-leftalign {
+  text-align: left;
+}
+
+.md-total {
+  color: #000000;
+}
+
+/* Cabber Fare And Rate Screen CSS */
+
+.md-center-toolbar {
+  text-align: center;
+}
+
+.md-center-toolbar h1,
+.md-center-toolbar h2,
+.md-center-toolbar h3 {
+  margin: auto;
+}
+
+.layout-fare-summery {
+  padding-top: 20px;
+}
+
+.md-summary-title {
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.md-summary-title:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50px;
+  height: 5px;
+  margin: 0 auto;
+  background: #54b61e;
+  content: "";
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.md-total-fare {
+  margin: 20px 0 0;
+  font-weight: bold;
+}
+
+.md-fare-date {
+  margin-top: 5px;
+}
+
+.md-fare-driver {
+  text-align: left;
+}
+
+md-list-item.md-fare-driver {
+  display: inline-flex;
+}
+
+md-list-item.md-fare-driver p.ng-binding {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+md-list-item.md-fare-driver .md-avatar,
+md-list-item.md-fare-driver .md-avatar-icon,
+md-list-item.md-fare-driver .md-list-item-inner .md-avatar,
+md-list-item.md-fare-driver .md-list-item-inner .md-avatar-icon {
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.layout-rating {
+  background: #f5f4f4;
+  position: relative;
+}
+
+.layout-rating:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-image: url(../assets/images/background1.png);
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  background-size: 20px auto;
+  content: "";
+}
+
+.layout-rating .md-ratings {
+  padding-top: 5px;
+  font-size: 36px;
+  color: #cacaca;
+}
+
+.md-button-red {
+  background-color: #ff1e1e !important;
+  -webkit-box-shadow: 0 5px 10px rgba(255, 30, 30, 0.4) !important;
+  -ms-box-shadow: 0 5px 10px rgba(255, 30, 30, 0.4) !important;
+  box-shadow: 0 5px 10px rgba(255, 30, 30, 0.4) !important;
+}
+
+/* Cabber Location Selector Screen CSS */
+
+.layout-location-item {
+  position: relative;
+}
+
+.layout-location-item:last-child:before {
+  background: #ffca28;
+}
+
+.layout-location-item:last-child:after {
+  display: none;
+}
+
+.layout-location-item:last-child md-autocomplete:before {
+  display: none;
+}
+
+.layout-location-item:before {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  background: #54b61e;
+  -webkit-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  content: "";
+  z-index: 3;
+}
+
+.layout-location-item:after {
+  position: absolute;
+  top: 22px;
+  left: 19px;
+  width: 1px;
+  height: 100%;
+  background: #000000;
+  content: "";
+  z-index: 2;
+}
+
+.layout-location-item label {
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  min-width: 35px;
+  text-align: right;
+  color: #cfcfcf;
+  font-size: 14px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.layout-location-item md-autocomplete-wrap {
+  -webkit-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+}
+
+.layout-location-item md-autocomplete,
+.layout-location-item md-autocomplete md-autocomplete-wrap {
+  height: 50px;
+  z-index: 1;
+}
+
+.layout-location-item md-autocomplete:before {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 35px;
+  height: 5px;
+  background: #ffffff;
+  content: "";
+  z-index: 2;
+}
+
+.layout-location-item md-autocomplete input:not(.md-input) {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 80px;
+  color: #393939;
+}
+
+.layout-location-item .md-icon-button {
+  min-height: 40px;
+  margin-top: 4px;
+}
+
+/* Cabber Profile Screen CSS */
+
+.layout-md-avatar {
+  margin-bottom: 10px;
+  background-color: #f8f8f8;
+  position: relative;
+}
+
+.layout-md-avatar .md-edit-profile {
+  position: absolute;
+  bottom: -28px;
+  right: 24px;
+  margin: 0;
+  background-color: #54b61e;
+  z-index: 1;
+}
+
+.layout-profile-info .md-subhead {
+  margin: 0;
+  color: #8e8e8e;
+  font-size: 15px;
+}
+
+.layout-profile-info .md-headline {
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.flex-profile-info-list {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.md-green-color {
+  color: #54b61e;
+}
+
+/* Cabber Schedule CSS */
+
+.layout-schedule .md-title {
+  font-weight: 400;
+}
+
+.layout-wrap .md-black-color {
+  color: #000000;
+}
+
+.layout-bottom-card {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.layout-bottom-card-styletwo {
+  padding-bottom: 0;
+}
+
+.layout-bottom-card-styletwo md-card:last-child {
+  margin-bottom: 0;
+}
+
+.layout-choose-cab md-card {
+  margin: 0;
+}
+
+.layout-choose-cab md-card md-card-content {
+  padding: 10px;
+}
+
+.layout-choose-cab .swiper-container {
+  height: auto !important;
+}
+
+.layout-choose-cab .swiper-slide {
+  width: auto;
+}
+
+.layout-norow-padding {
+  padding: 0 !important;
+}
+
+.flex-cab {
+  display: table;
+  padding: 11px 11px 20px;
+  text-align: left;
+  position: relative;
+  margin: 0 auto;
+}
+
+.swiper-slide-active .flex-cab img {
+  filter: none;
+  /* IE */
+  -webkit-filter: none;
+  /* Old WebKit */
+  -webkit-filter: none;
+  /* New WebKit */
+  filter: none;
+  /* older Firefox */
+  filter: none;
+  /* Current draft standard */
+  -webkit-box-shadow: 10px 0 15px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 10px 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.flex-cab .flex-cab-image {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.flex-cab .flex-cab-info {
+  display: table-cell;
+  vertical-align: middle;
+  max-width: 110px;
+  padding-left: 15px;
+}
+
+.flex-cab img {
+  max-width: 70px;
+  -webkit-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  filter: gray;
+  /* IE */
+  -webkit-filter: grayscale(1);
+  /* Old WebKit */
+  -webkit-filter: grayscale(100%);
+  /* New WebKit */
+  filter: url(resources.svg#desaturate);
+  /* older Firefox */
+  filter: grayscale(100%);
+  /* Current draft standard */
+  -webkit-transition: all .3s cubic-bezier(.55, 0, .55, .2);
+  transition: all .3s cubic-bezier(.55, 0, .55, .2);
+}
+
+.flex-cab .md-headline {
+  margin: 10px 0 0;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.flex-cab .md-subhead {
+  margin: 0;
+  font-size: 13px;
+}
+
+.md-cab-time {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3px 8px;
+  background: #54b61e;
+  color: #ffffff;
+  font-size: 12px;
+  content: "";
+  -webkit-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+/* Cabber Add Card Screen CSS */
+
+.layout-steps {
+  text-align: center;
+}
+
+.flex-steps-wrap {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.flex-steps-wrap.active:before,
+.flex-steps-wrap.active:after {
+  background: #54b61e;
+}
+
+.flex-steps-wrap:first-child:before {
+  display: none;
+}
+
+.flex-steps-wrap:before {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 1px;
+  background: #d8d8d8;
+  content: "";
+  -webkit-transition: all .3s cubic-bezier(.55, 0, .55, .2);
+  transition: all .3s cubic-bezier(.55, 0, .55, .2);
+}
+
+.flex-steps-wrap:after {
+  display: inline-block;
+  vertical-align: middle;
+  width: 8px;
+  height: 8px;
+  margin: 0 2px 0 8px;
+  background: #d8d8d8;
+  content: "";
+  -webkit-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-transition: all .3s cubic-bezier(.55, 0, .55, .2);
+  transition: all .3s cubic-bezier(.55, 0, .55, .2);
+}
+
+.flex-card-wrap {
+  padding: 5px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5b5b5b+0,4b4b4b+50,414141+100 */
+  background: #5b5b5b;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #5b5b5b 0%, #4b4b4b 50%, #414141 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #5b5b5b 0%, #4b4b4b 50%, #414141 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #5b5b5b 0%, #4b4b4b 50%, #414141 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5b5b5b', endColorstr='#414141', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.flex-card-wrap .md-subhead {
+  margin: 0;
+  color: #191919;
+  font-size: 14px;
+}
+
+.flex-card-wrap .md-title {
+  margin: 0;
+}
+
+.flex-card-view {
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  background: #d99d1c;
+  position: relative;
+}
+
+.flex-card-view:before {
+  position: absolute;
+  top: 7px;
+  bottom: 7px;
+  left: 7px;
+  right: 7px;
+  background: #c68f1a;
+  content: "";
+  z-index: 1;
+}
+
+.flex-card-title {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.flex-card-name {
+  position: relative;
+  z-index: 1;
+}
+
+.flex-card-type {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  color: rgba(0, 0, 0, 0.08);
+  font-size: 55px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.flex-card-number {
+  padding: 10px 0 5px;
+}
+
+/* Cabber Where To Go Screen CSS */
+
+.layout-full-emberview .layout-location-item md-autocomplete .md-icon-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 3px;
+  z-index: 1;
+}
+
+.layout-location-item md-autocomplete .ember-view .place-autocomplete--input {
+  width: 100%;
+  height: 50px;
+  padding: 10px 50px 10px 37px;
+  border: none;
+  background: #ffffff;
+  color: #393939;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 50px;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.layout-location-two .layout-location-item md-autocomplete .ember-view .place-autocomplete--input {
+  padding-left: 80px;
+}
+
+.layout-full-emberview .ember-view {
+  width: 100%;
+}
+
+.pac-container {
+  right: 8px;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.pac-logo:after {
+  display: none;
+}
+
+.pac-item {
+  padding: 5px 16px;
+}
+
+/* Cabber Driver Category Pages CSS */
+
+/* Cabber Accept Rider CSS */
+
+.md-toolbar-tools .md-button.md-toolbar-button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin: 0;
+  min-width: auto;
+  padding: 0 16px;
+  font-weight: 400;
+  text-transform: none;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.layout-accept-rider md-card {
+  z-index: 1;
+  margin: 0;
+}
+
+.layout-accept-rider md-card md-card-header:first-child md-card-avatar {
+  margin-right: 0;
+}
+
+.layout-accept-rider md-card md-card-header:last-child md-card-avatar {
+  margin-left: 0;
+}
+
+.layout-accept-rider md-card .md-subhead {
+  color: #8e8e8e;
+}
+
+.layout-accept-rider md-card .md-title {
+  font-weight: 600;
+}
+
+.layout-accept-rider md-card md-card-header md-card-avatar {
+  width: 56px;
+  height: 56px;
+}
+
+.layout-accept-rider md-card md-card-header md-card-avatar+md-card-header-text {
+  max-height: none;
+}
+
+.layout-accept-rider md-card .md-nevigate-button {
+  min-width: auto;
+  padding: 5px;
+  margin: 0;
+  color: #8e8e8e;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 24px;
+}
+
+.layout-accept-rider md-card .md-nevigate-button .material-icons {
+  display: block;
+  color: #54b61e;
+}
+
+.md-button-full {
+  min-width: 100%;
+}
+
+/* Cabber Cancel Ride Reason Screen CSS */
+
+/* Cabber Md Bottom Sheet CSS */
+
+md-bottom-sheet {
+  background: rgba(255, 255, 255, 0.75);
+  border: none;
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+md-bottom-sheet.md-has-header.md-list {
+  padding: 16px 16px 0;
+}
+
+md-bottom-sheet:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  content: "";
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  z-index: -1;
+}
+
+md-bottom-sheet.md-has-header {
+  border: none;
+}
+
+md-bottom-sheet .md-subheader .md-subheader-content {
+  color: #3e7c1c;
+  font-family: 'Monterrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+md-bottom-sheet.md-list .md-button {
+  min-width: 100%;
+  min-height: 24px;
+  line-height: 24px;
+  background: none;
+  padding: 8px 0;
+  margin: 0;
+  text-transform: none;
+  font-weight: 400;
+  text-align: left;
+}
+
+md-bottom-sheet .md-button.md-default-theme:not([disabled]):hover,
+md-bottom-sheet .md-button:not([disabled]):hover {
+  background: none;
+}
+
+md-bottom-sheet md-list {
+  padding: 0 10px 10px;
+}
+
+.md-subheader .md-subheader-inner {
+  padding: 5px 10px 10px;
+}
+
+md-bottom-sheet.md-list md-list-item {
+  height: auto !important;
+  min-height: auto !important;
+}
+
+md-list-item:before,
+md-list-item .md-list-item-inner:before {
+  min-height: auto;
+}
+
+md-bottom-sheet {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 8px 16px 88px;
+  z-index: 70;
+  border-top-width: 1px;
+  border-top-style: solid;
+  -webkit-transform: translate3d(0, 80px, 0);
+  transform: translate3d(0, 80px, 0);
+  -webkit-transition: all .4s cubic-bezier(.25, .8, .25, 1);
+  transition: all .4s cubic-bezier(.25, .8, .25, 1);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform
+}
+
+md-bottom-sheet.md-has-header {
+  padding-top: 0
+}
+
+md-bottom-sheet.ng-enter {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0)
+}
+
+md-bottom-sheet.ng-enter-active {
+  opacity: 1;
+  display: block;
+  -webkit-transform: translate3d(0, 80px, 0) !important;
+  transform: translate3d(0, 80px, 0) !important
+}
+
+md-bottom-sheet.ng-leave-active {
+  -webkit-transform: translate3d(0, 100%, 0) !important;
+  transform: translate3d(0, 100%, 0) !important;
+  -webkit-transition: all .3s cubic-bezier(.55, 0, .55, .2);
+  transition: all .3s cubic-bezier(.55, 0, .55, .2);
+}
+
+md-bottom-sheet .md-subheader {
+  background-color: transparent;
+  font-family: Roboto, Helvetica Neue, sans-serif;
+  line-height: 56px;
+  padding: 0;
+  white-space: nowrap
+}
+
+md-bottom-sheet md-inline-icon {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  fill: #444
+}
+
+md-bottom-sheet md-list-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  outline: none
+}
+
+md-bottom-sheet md-list-item:hover {
+  cursor: pointer
+}
+
+md-bottom-sheet.md-list md-list-item {
+  padding: 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 48px
+}
+
+md-bottom-sheet.md-grid {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 0
+}
+
+md-bottom-sheet.md-grid md-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap
+}
+
+md-bottom-sheet.md-grid md-list,
+md-bottom-sheet.md-grid md-list-item {
+  -webkit-box-direction: normal;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center
+}
+
+md-bottom-sheet.md-grid md-list-item {
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  height: 96px;
+  margin-top: 8px;
+  margin-bottom: 8px
+}
+
+@media (max-width:960px) {
+  md-bottom-sheet.md-grid md-list-item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 33.33333%;
+    flex: 1 1 33.33333%;
+    max-width: 33.33333%
+  }
+
+  md-bottom-sheet.md-grid md-list-item:nth-of-type(3n+1) {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start
+  }
+
+  md-bottom-sheet.md-grid md-list-item:nth-of-type(3n) {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end
+  }
+}
+
+@media (min-width:960px) and (max-width:1279px) {
+  md-bottom-sheet.md-grid md-list-item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 25%;
+    flex: 1 1 25%;
+    max-width: 25%
+  }
+}
+
+@media (min-width:1280px) and (max-width:1919px) {
+  md-bottom-sheet.md-grid md-list-item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 16.66667%;
+    flex: 1 1 16.66667%;
+    max-width: 16.66667%
+  }
+}
+
+@media (min-width:1920px) {
+  md-bottom-sheet.md-grid md-list-item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 14.28571%;
+    flex: 1 1 14.28571%;
+    max-width: 14.28571%
+  }
+}
+
+md-bottom-sheet.md-grid md-list-item:before {
+  display: none
+}
+
+md-bottom-sheet.md-grid md-list-item .md-list-item-content {
+  width: 48px;
+  padding-bottom: 16px
+}
+
+md-bottom-sheet.md-grid md-list-item .md-grid-item-content,
+md-bottom-sheet.md-grid md-list-item .md-list-item-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center
+}
+
+md-bottom-sheet.md-grid md-list-item .md-grid-item-content {
+  border: 1px solid transparent;
+  width: 80px
+}
+
+md-bottom-sheet.md-grid md-list-item .md-grid-text {
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 13px;
+  margin: 0;
+  white-space: nowrap;
+  width: 64px;
+  text-align: center;
+  text-transform: none;
+  padding-top: 8px
+}
+
+@media screen and (-ms-high-contrast:active) {
+  md-bottom-sheet {
+    border: 1px solid #fff
+  }
+}
+
+/* Cabber Home Offline Screen CSS */
+
+md-switch {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #3a7f14;
+  letter-spacing: 1px;
+}
+
+md-switch.md-default-theme .md-bar,
+md-switch .md-bar {
+  background: #3a7f14;
+}
+
+md-switch .md-label+.md-container {
+  margin-left: 8px;
+}
+
+.layout-driver-summery .md-green-color {
+  color: #439218;
+}
+
+.layout-driver-summery .md-green-color .material-icons {
+  vertical-align: bottom;
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+.layout-driver-summery .layout-driver-info+.layout-driver-info {
+  padding: 15px 0 5px;
+}
+
+.layout-driver-summery md-bottom-sheet.md-has-header.md-list,
+.layout-driver-summery md-bottom-sheet md-list {
+  padding: 0;
+}
+
+.layout-driver-summery md-bottom-sheet.md-grid md-list-item {
+  margin: 0;
+}
+
+.layout-static {
+  position: static;
+}
+
+.md-today-summery {
+  padding: 5px;
+}
+
+md-bottom-sheet.md-grid md-list-item {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 25%;
+  flex: 1 1 25%;
+  max-width: 25%;
+}
+
+md-bottom-sheet.md-grid md-list-item .md-grid-text {
+  width: auto;
+  padding-top: 0;
+  color: #a2a2a2;
+}
+
+md-bottom-sheet.md-grid md-list-item.md-active .md-grid-text {
+  color: #3a7f14;
+}
+
+.layout-bottomsheet-versiontwo {
+  background: #ffffff;
+  text-align: center;
+}
+
+.layout-bottomsheet-versiontwo .material-icons {
+  display: block;
+  padding-bottom: 5px;
+}
+
+md-bottom-sheet.md-grid md-list-item .md-grid-item-content {
+  width: 100%;
+}
+
+.md-accept-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54b61e+0,a4db0e+50,effe00+100 */
+  background: rgb(84, 182, 30);
+  /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(84, 182, 30, 1) 0%, rgba(164, 219, 14, 1) 50%, rgba(239, 254, 0, 1) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(84, 182, 30, 1) 0%, rgba(164, 219, 14, 1) 50%, rgba(239, 254, 0, 1) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(84, 182, 30, 1) 0%, rgba(164, 219, 14, 1) 50%, rgba(239, 254, 0, 1) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#54b61e', endColorstr='#effe00', GradientType=1);
+  /* IE6-9 */
+  z-index: 1;
+}
+
+.swiper-container {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+// .mdl-button--raised.mdl-button--colored {
+//   background: #b53f9f;
+//   color: #3c0707;
+// }
+/* Cabber Signup Screen CSS */
+
+.firebaseui-container {
+  max-width: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.firebaseui-textfield {
+  padding: 0;
+}
+
+.firebaseui-textfield+.firebaseui-textfield .mdl-textfield__input {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.mdl-textfield__input {
+  height: 50px;
+  padding: 10px 20px;
+  border: none;
+  background: #f5f4f4;
+  color: #626262;
+  font-weight: 400;
+  font-size: 14px;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.mdl-textfield__label {
+  top: 15px;
+  bottom: auto;
+  left: 20px;
+  width: auto;
+}
+
+.mdl-textfield--floating-label.has-placeholder .mdl-textfield__label,
+.mdl-textfield--floating-label.is-dirty .mdl-textfield__label,
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label {
+  display: none;
+}
+
+.firebaseui-id-submit {
+  min-width: 100%;
+  margin-left: 0;
+  font-weight: 600;
+  min-height: 50px;
+  line-height: 50px;
+  background-color: #54b61e !important;
+  -webkit-box-shadow: 0 5px 5px rgba(84, 182, 30, 0.4) !important;
+  -ms-box-shadow: 0 5px 5px rgba(84, 182, 30, 0.4) !important;
+  box-shadow: 0 5px 5px rgba(84, 182, 30, 0.4) !important;
+}
+
+.firebaseui-id-secondary-link {
+  display: block;
+  border: 1px solid #dfdfdf;
+  min-width: 100%;
+  margin: 0 0 15px;
+  font-weight: 600;
+  min-height: 50px;
+  line-height: 50px;
+}
+
+.firebaseui-input-floating-button {
+  top: 13px;
+  right: 13px;
+}
+
+.firebaseui-text-input-error {
+  margin-top: 10px;
+}
+
+.firebaseui-new-password-component .mdl-textfield__input {
+  padding-right: 50px;
+}
+
+.firebaseui-card-header {
+  padding: 30px 24px 0 24px;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.firebaseui-subtitle,
+.firebaseui-title {
+  text-align: center;
+}
+
+.firebaseui-form-links,
+.firebaseui-form-actions {
+  display: block;
+}
+
+.firebaseui-text {
+  margin-top: 0;
+  text-align: center;
+}
+
+.firebaseui-id-secondary-link.firebaseui-link {
+  margin-bottom: 20px;
+  border: none;
+  text-align: center;
+  min-height: 10px;
+  line-height: normal;
+  color: #54b61e;
+}
+
+.mdl-button--primary.mdl-button--primary {
+  background: #ffffff;
+  color: #54b61e;
+}
+
+.firebaseui-title {
+  display: none;
+}
+
+.overlay.layout-column {
+  background-color: #54b61e;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.overlay.layout-column md-icon.md-default-theme,
+.overlay.layout-column md-icon {
+  color: #ffffff;
+}
+
+.md-sidenav-left md-toolbar.md-default-theme:not(.md-menu-toolbar),
+.md-sidenav-left md-toolbar:not(.md-menu-toolbar) {
+  background-color: #54b61e;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.flex-user-details {
+  background: url(../assets/images/user2.png) no-repeat 0 0;
+  background-size: cover;
+  padding: 40px 30px;
+}
+
+.flex-user-details .pull-left {
+  float: left;
+  width: 80px;
+}
+
+.flex-user-details .pull-left img {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.inline-view {
+  display: block;
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+.inline-view h5 {
+  margin: 15px 0 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.inline-view a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.ember-google-map .infoBox {
+  width: auto !important;
+  background: #ffffff;
+  padding: 13px 10px 13px 13px;
+  border-left: 10px solid #54b61e;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ember-google-map .infoBox+.infoBox {
+  border-color: #fbbd00;
+}
+
+.ember-google-map .infoBox>img {
+  display: none;
+}
+
+.pac-item.pac-button {
+  padding: 0;
+  background: #ffffff;
+  position: relative;
+}
+
+.pac-item.pac-button .md-button {
+  min-width: 100%;
+  padding: 12px 15px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 13px;
+  min-height: 10px;
+  line-height: normal;
+  text-transform: none;
+  text-align: left;
+}
+
+.pac-item.pac-button .md-button .material-icons {
+  padding-right: 5px;
+  color: #b3b3b3;
+  font-size: 18px;
+}
+
+.firebaseui-busy-indicator {
+  position: relative;
+  width: auto;
+  margin: 15px 25px;
+}
+
+.mdl-progress>.bufferbar {
+  background: #54b61e;
+  opacity: 0.1;
+}
+
+.mdl-progress.mdl-progress--indeterminate>.bar3,
+.mdl-progress.mdl-progress__indeterminate>.bar3,
+.mdl-progress.mdl-progress--indeterminate>.bar1,
+.mdl-progress.mdl-progress__indeterminate>.bar1 {
+  background: #54b61e;
+}
+
+.firebaseui-callback-indicator-container {
+  height: auto;
+}
+
+md-bottom-sheet.md-full-height {
+  height: 100%;
+
+  .md-button {
+    text-align: center;
+  }
+
+  .flex-textright {
+    position: absolute;
+    right: 15px;
+    top: 22px;
+  }
+}
+
+.layout-middle-card {
+  height: 100%;
+}
+
+md-bottom-sheet md-card-avatar img {
+  width: 50%;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.md-username {
+  display: block;
+  padding: 20px 0 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.md-phoneno {
+  display: block;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #54b61e;
+}
+
+md-bottom-sheet .md-ratings {
+  display: block;
+  padding: 25px 0 0;
+  text-align: center;
+
+  span {
+    color: #333333;
+    display: inline-block;
+    margin-right: 3px;
+  }
+
+  i {
+    position: relative;
+    top: -3px;
+  }
+}
+
+.md-rider-details {
+  md-card {
+    margin: 8px 0;
+  }
+}
+
+.layout-menu-links {
+  .ng-scope {
+    display: block;
+  }
+
+  .material-icons {
+    color: #54b61e;
+    margin-top: 15px;
+  }
+}
+
+.md-bottom-bar {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  margin-top: 10px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+  .md-button {
+    width: 25%;
+    min-width: 25%;
+    min-height: inherit;
+    margin: 0;
+    color: #a2a2a2;
+    text-transform: inherit;
+    line-height: normal;
+    padding: 10px;
+    font-weight: 400;
+
+    .ng-scope {
+      display: block;
+      padding-top: 5px;
+    }
+  }
+
+  .md-button.md-active {
+    color: #3a7f14;
+  }
+}
+
+.md-steps {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+
+  span {
+    width: 10px;
+    height: 10px;
+    background: #d8d8d8;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 15px;
+
+    &:before {
+      content: "";
+      width: 24px;
+      height: 1px;
+      background: #d8d8d8;
+      position: absolute;
+      right: 15px;
+      top: 4px;
+      z-index: 1;
+    }
+  }
+
+  span:first-child {
+    &:before {
+      display: none;
+    }
+  }
+
+  .active-step {
+    background: #54b61e;
+
+    &:before {
+      background: #54b61e;
+    }
+  }
+}
+
+.md-img-uploader {
+  .md-icon-button {
+    background-color: #f5f4f4;
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    margin: 0;
+
+    &:hover {
+      background-color: #f5f4f4;
+    }
+  }
+
+  .md-button.md-default-theme:not([disabled]).md-icon-button:hover,
+  .md-button:not([disabled]).md-icon-button:hover {
+    background-color: #f5f4f4;
+  }
+}
+
+.recipient-contacts {
+  position: relative;
+  background-color: #f8f8f8;
+}
+
+.cabber-width {
+  width: 100%;
+  left: 0;
+}
