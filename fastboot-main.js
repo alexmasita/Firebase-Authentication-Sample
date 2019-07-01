@@ -9,23 +9,23 @@ admin.initializeApp({
 let server = new FastBootAppServer({
   beforeMiddleware: function (app) {
     app.get('/*', async (req, res, next) => {
-      console.log('firebase verifyID Token get entered');
-      //console.log('req.headers');
-      //console.log(req.headers)
+      console.log('Line 1: firebase verifyID Token get entered');
+      console.log('Line 1.1: firebase req.headers.authorization');
+      console.log(req.headers.authorization);
       if (req.headers.authorization && req.headers.authorization.startsWith('Bearer ')) {
         try {
           const idToken = req.headers.authorization.split('Bearer ')[1];
-          console.log('idToken: ', idToken);
+          console.log('Line 2: idToken: ', idToken);
           const auth = admin.auth();
           const decodedIdToken = await auth.verifyIdToken(idToken);
           const {
             uid
           } = decodedIdToken;
           const customToken = await auth.createCustomToken(uid);
-          console.log('firebase verifyID Token customToken: ', customToken);
+          console.log('Line 3: firebase customToken: ', customToken);
           req.headers.authorization = `Bearer ${customToken}`;
         } catch (error) {
-          console.log('firebase verifyID Token error');
+          console.log('Line 4: firebase Token error');
           console.log(error);
         }
       }
