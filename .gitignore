@@ -10,6 +10,7 @@
 
 # misc
 /.env*
+/mobile-services-9f146-firebase-adminsdk-2n1f2-ee385fc648.json
 /.pnp*
 /.sass-cache
 /connect.lock
